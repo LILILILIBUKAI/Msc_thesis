@@ -165,6 +165,6 @@ pause(1)
 %         rotationangle = zeros(length(t),1);
 %     end
     
-file_loc = 'data\';
+file_loc = ''; % use for example: 'data\';, to create a folder with all the results
 filename = sprintf('MATLAB_%d%d%dper%d_flapf%d.mat',rot_vec(3)*frot,rot_vec(2)*frot,rot_vec(1)*frot, periodic,fflap);
 save( [file_loc, filename] ,'flappingangle','x','y','z','strainx','strainy','strainxy','T')
